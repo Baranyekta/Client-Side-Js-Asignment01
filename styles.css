@@ -1,0 +1,50 @@
+/* styles.css */
+
+body {
+    font-family: "Book Antiqua", sans-serif;
+    background-color: #ffcbf7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #c47db6;
+    color: rgba(128, 8, 169, 0.5);
+    padding: 20px;
+}
+
+section {
+    background-color: #dde8ff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgb(116, 160, 253);
+}
+
+button {
+    background-color: #a480b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8008a9;
+}
+
+p {
+    margin: auto;
+}
+
+#story {
+    font-weight: bold;
+}
+
+#studentInfo {
+    font-style: italic;
+    font-size: 14px;
+}

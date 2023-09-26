@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>See-N-Say Storymaker</h1>
+
+	<section>
+	<!-- section with all the buttons for the user to build their story -->
+		<button class="randomNoun1">Random Noun 1</button>
+		<button class="randomVerb">Random Verb</button>
+		<button class="randomAdj">Random Adjective</button>
+		<button class="randomNoun2">Random Noun 2</button>
+		<button class="randomSetting">Random Setting</button>
+	</section>
+
+	<section>
+		<!-- section with playback controls to see or hear the story -->
+		<h2>See Your Story...</h2>
+		<div>
+			<!-- input/ output area for student name -->
+			<label for="name">Enter your student name:</label>
+			<input id="name" type="text" placeholder="Your Name" />
+			<button id="addStudentName">Add Student Name</button> <!-- added this button -->
+		</div>
+
+		<div>
+			<button id="randomStory">Generate Random Story</button> <!-- random story generator button -->
+			<button id="resetStory">Reset</button> <!-- added a reset button -->
+		</div>
+
+		<!-- empty paragraph to display the story -->
+		<p class="story"></p>
+		<p id="studentName"></p> <!-- added a paragraph to display student name -->
+		<script src="js/storymaker.js"></script>
+	</section>
+</body>
+
+</html>
