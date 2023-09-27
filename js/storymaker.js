@@ -33,50 +33,50 @@ function result() {
 }
 
 //EVENT LISTENERS
-randomNoun1._on_click = function() {
-    selectedNoun1 = randomValueFromArray(insertNoun1);
+randomNoun1._on_click = function() { //define the click event handler for the "randomNoun1" button
+    selectedNoun1 = randomValueFromArray(insertNoun1); //generate random value for the selected element
     result();
 };
 
-randomVerb._on_click = function() {
-    selectedVerb = randomValueFromArray(insertVerb);
+randomVerb._on_click = function() { //define the click event handler for the "randomVerb" button
+    selectedVerb = randomValueFromArray(insertVerb); //generate random value for the selected element
     result();
 };
 
-randomAdj._on_click = function() {
-    selectedAdj = randomValueFromArray(insertAdj);
+randomAdj._on_click = function() { //define the click event handler for the "randomAdj" button
+    selectedAdj = randomValueFromArray(insertAdj); //generate random value for the selected element
     result();
 };
 
-randomNoun2._on_click = function() {
-    selectedNoun2 = randomValueFromArray(insertNoun2);
+randomNoun2._on_click = function() { //define the click event handler for the "randomNoun2" button
+    selectedNoun2 = randomValueFromArray(insertNoun2); //generate random value for the selected element
     result();
 };
 
-randomSetting._on_click = function() {
-    selectedSetting = randomValueFromArray(insertSetting);
+randomSetting._on_click = function() { //define the click event handler for the "randomSetting" button
+    selectedSetting = randomValueFromArray(insertSetting); //generate random value for the selected element
     result();
 };
 
 //attach the simulated click event to the buttons
 randomNoun1.addEventListener('click', function() {
-    randomNoun1._on_click();
+    randomNoun1._on_click(); //trigger the "_on_click" function associated with the "randomNoun1" button
 });
 
 randomVerb.addEventListener('click', function() {
-    randomVerb._on_click();
+    randomVerb._on_click(); //trigger the "_on_click" function associated with the "randomVerb" button
 });
 
 randomAdj.addEventListener('click', function() {
-    randomAdj._on_click();
+    randomAdj._on_click(); //trigger the "_on_click" function associated with the "randomAdj" button
 });
 
 randomNoun2.addEventListener('click', function() {
-    randomNoun2._on_click();
+    randomNoun2._on_click(); //trigger the "_on_click" function associated with the "randomNoun2" button
 });
 
 randomSetting.addEventListener('click', function() {
-    randomSetting._on_click();
+    randomSetting._on_click(); //trigger the "_on_click" function associated with the "randomSetting" button
 });
 
 //get "Generate Random Story" button by its id
@@ -110,15 +110,15 @@ var addStudentNameButton = document.getElementById('addStudentName');
 
 //attach the simulated click event to the "Add Student Name" button
 addStudentNameButton.addEventListener('click', function() {
-    addStudentName();
+    addStudentName();     //when button is clicked, call the 'addStudentName' function
 });
 
 //FUNCTION TO ADD STUDENT NAME
 function addStudentName() {
-    var studentNameInput = document.getElementById('name');
-    var studentNameParagraph = document.getElementById('studentName');
-    var name = studentNameInput.value;
-    studentNameParagraph.textContent = "Student Name: " + name;
+    var studentNameInput = document.getElementById('name'); //get the input with id 'name' where the student's name is entered
+    var studentNameParagraph = document.getElementById('studentName'); //get the paragraph with id 'studentName' where the student's name will be displayed
+    var name = studentNameInput.value;     //retrieve the input name
+    studentNameParagraph.textContent = "Student Name: " + name; //display
 }
 
 //get "Reset" button by its id
@@ -126,11 +126,12 @@ var resetStoryButton = document.getElementById('resetStory');
 
 //added an event listener to the "Reset" button
 resetStoryButton.addEventListener('click',function() {
+    //reset all selected values to empty strings
     selectedNoun1 = '';
     selectedVerb = '';
     selectedAdj = '';
     selectedNoun2 = '';
     selectedSetting = '';
-    story.textContent = '';
-    story.style.visibility = 'hidden';
+    story.textContent = '';  //clear story text content
+    story.style.visibility = 'hidden'; //hide story paragraph by setting its visibility to 'hidden'
 });
